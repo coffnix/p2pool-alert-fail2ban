@@ -5,10 +5,10 @@
   SUBJECT_IN="$2"
 
   date
-  echo "comando:"
+  echo "command:"
   echo "curl -s -X POST https://api.telegram.org/bot\${TOKEN}/sendMessage -d chat_id=\${USER} --data-urlencode text=\"\${SUBJECT_IN}\""
   echo
-  echo "saida:"
+  echo "output:"
   curl -s -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
        -d "chat_id=${USER}" \
        --data-urlencode "text=${SUBJECT_IN}"
