@@ -1,0 +1,13 @@
+[DEFAULT]
+enabled = false
+banaction =
+action = telegram
+bantime  = 1m
+findtime = 1d
+maxretry = 1
+
+[p2pool-payout]
+enabled = true
+filter  = p2pool-payout
+logpath = /var/lib/p2pool/p2pool.log
+backend = auto
